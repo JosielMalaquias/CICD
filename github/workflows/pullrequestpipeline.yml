@@ -46,3 +46,6 @@ jobs:
           snowSSHPublicKey: ${{ secrets.SSH_PUBLIC_KEY }}
           snowSSHHost: ${{ secrets.SSH_HOST }}
           snowInstallInstance: ${{ secrets.NOW_DEV_INSTANCE }}
+          
+    - name: ServiceNow CI/CD Instance Scan
+      uses: ServiceNow/sncicd-instance-scan@2.0.0
